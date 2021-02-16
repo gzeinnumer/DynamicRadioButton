@@ -66,7 +66,7 @@ if you want to custom your `RadioButton` use `app:style="@style/radioButtonStyle
 ```xml
 <resources xmlns:tools="http://schemas.android.com/tools">
 
-    <style name="radioButtonStyle" parent="Base.Theme.AppCompat">
+    <style name="def_radioButtonStyle" parent="Base.Theme.AppCompat">
         <item name="android:textColor">#FFE500</item>
     </style>
 </resources>
