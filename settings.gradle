@@ -1,2 +1,3 @@
+include ':dr'
 include ':app'
 rootProject.name = "DynamicRadioButton"
