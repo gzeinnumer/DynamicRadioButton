@@ -75,7 +75,7 @@ if you want to custom your `RadioButton` use `app:style="@style/radioButtonStyle
 <com.gzeinnumer.dr.DynamicRadioButton
     ...
     app:orientation="horizontal"
-    app:style="@style/radioButtonStyle"/>
+    app:style="@style/def_radioButtonStyle"/>
 ```
 
 #
