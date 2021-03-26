@@ -8,7 +8,7 @@
 </h1>
 
 <div align="center">
-    <a><img src="https://img.shields.io/badge/Version-2.0.0-brightgreen.svg?style=flat"></a>
+    <a><img src="https://img.shields.io/badge/Version-2.0.1-brightgreen.svg?style=flat"></a>
     <a><img src="https://img.shields.io/badge/ID-gzeinnumer-blue.svg?style=flat"></a>
     <a><img src="https://img.shields.io/badge/Java-Suport-green?logo=java&style=flat"></a>
     <a><img src="https://img.shields.io/badge/Kotlin-Suport-green?logo=kotlin&style=flat"></a>
@@ -74,7 +74,7 @@ if you want to custom your `RadioButton` use `app:style="@style/radioButtonStyle
 ```xml
 <com.gzeinnumer.dr.DynamicRadioButton
     ...
-    app:orientation="horizontal"
+    app:orientationRadioButton="horizontal"
     app:style="@style/def_radioButtonStyle"/>
 ```
 
@@ -168,6 +168,8 @@ dynamicRadioButton.setItemList(listObject).setOnCheckedChangeListener(new Dynami
   - First Release
 - **2.0.0**
   - Support SDK 16
+- **2.0.1**
+  - orientation to orientationRadioButton
 
 ---
 # Contribution
