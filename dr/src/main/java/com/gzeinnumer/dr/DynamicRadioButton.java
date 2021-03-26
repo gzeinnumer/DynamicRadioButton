@@ -50,7 +50,7 @@ public class DynamicRadioButton extends RadioGroup {
     private <T> void initView(List<T> items) {
         TypedArray attributes = _context.obtainStyledAttributes(_attrs, R.styleable.DynamicCheckBox);
 
-        if (attributes.getInt(R.styleable.DynamicCheckBox_orientation, 1) == 0)
+        if (attributes.getInt(R.styleable.DynamicCheckBox_orientationRadioButton, 1) == 0)
             _orientation = HORIZONTAL;
 
         setOrientation(_orientation);
