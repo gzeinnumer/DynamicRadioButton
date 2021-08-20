@@ -176,7 +176,7 @@ dynamicRadioButton.setSelectedItem(1).setItemList(list). ...
 - **2.0.2**
   - orientation to orientationRadioButton
 - **2.1.0**
-  - orientation to orientationRadioButton
+  - setSelectedItem()
 
 ---
 # Contribution
