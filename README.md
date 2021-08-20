@@ -139,9 +139,10 @@ dynamicRadioButton.setItemList(listObject).setOnCheckedChangeListener(new Dynami
     }
 });
 ```
+#
 Set `setSelectedItem(index)` use before `setItemList(list)`.
 ```java
-dynamicRadioButton.setSelectedItem(1)...
+dynamicRadioButton.setSelectedItem(1).setItemList(list). ...
 ```
 
 #
