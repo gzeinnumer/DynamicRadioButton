@@ -8,7 +8,7 @@
 </h1>
 
 <div align="center">
-    <a><img src="https://img.shields.io/badge/Version-2.0.2-brightgreen.svg?style=flat"></a>
+    <a><img src="https://img.shields.io/badge/Version-2.1.0-brightgreen.svg?style=flat"></a>
     <a><img src="https://img.shields.io/badge/ID-gzeinnumer-blue.svg?style=flat"></a>
     <a><img src="https://img.shields.io/badge/Java-Suport-green?logo=java&style=flat"></a>
     <a><img src="https://img.shields.io/badge/Kotlin-Suport-green?logo=kotlin&style=flat"></a>
@@ -139,6 +139,10 @@ dynamicRadioButton.setItemList(listObject).setOnCheckedChangeListener(new Dynami
     }
 });
 ```
+Set `setSelectedItem(index)` use before `setItemList(list)`.
+```java
+dynamicRadioButton.setSelectedItem(1)...
+```
 
 #
 **Preview** :
@@ -169,6 +173,8 @@ dynamicRadioButton.setItemList(listObject).setOnCheckedChangeListener(new Dynami
 - **2.0.0**
   - Support SDK 16
 - **2.0.2**
+  - orientation to orientationRadioButton
+- **2.1.0**
   - orientation to orientationRadioButton
 
 ---

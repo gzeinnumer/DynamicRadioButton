@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.gzeinnumer.dr.DynamicRadioButton;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -32,13 +33,17 @@ public class MainActivity extends AppCompatActivity {
         listString.add("Dua");
         listString.add("Tiga");
         listString.add("Empat");
+        Log.d(getClass().getSimpleName(), "sample1: "+listString.indexOf("Satu"));
 
-        dynamicRadioButton.setItemList(listString).setOnCheckedChangeListener(new DynamicRadioButton.OnCheckedChangeListener<String>() {
-            @Override
-            public void onCheckedChanged(String item) {
-                Log.d(TAG, "onCheckedChanged: " + item);
-            }
-        });
+        dynamicRadioButton
+                .setSelectedItem(1)
+                .setItemList(listString)
+                .setOnCheckedChangeListener(new DynamicRadioButton.OnCheckedChangeListener<String>() {
+                    @Override
+                    public void onCheckedChanged(String item) {
+                        Log.d(TAG, "onCheckedChanged: " + item);
+                    }
+                });
     }
 
     private void sample2() {
@@ -48,11 +53,14 @@ public class MainActivity extends AppCompatActivity {
         listObject.add(new ExampleModel(3, "Zein3", "Balbar3"));
         listObject.add(new ExampleModel(4, "Zein4", "Balbar4"));
 
-        dynamicRadioButton.setItemList(listObject).setOnCheckedChangeListener(new DynamicRadioButton.OnCheckedChangeListener<ExampleModel>() {
-            @Override
-            public void onCheckedChanged(ExampleModel item) {
-                Log.d(TAG, "onCheckedChanged: " + item.toString());
-            }
-        });
+        dynamicRadioButton
+                .setSelectedItem(listObject.indexOf(new ExampleModel(4, "Zein4", "Balbar4")))
+                .setItemList(listObject)
+                .setOnCheckedChangeListener(new DynamicRadioButton.OnCheckedChangeListener<ExampleModel>() {
+                    @Override
+                    public void onCheckedChanged(ExampleModel item) {
+                        Log.d(TAG, "onCheckedChanged: " + item.toString());
+                    }
+                });
     }
 }

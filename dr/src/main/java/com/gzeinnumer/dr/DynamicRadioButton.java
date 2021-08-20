@@ -20,6 +20,7 @@ public class DynamicRadioButton extends RadioGroup {
     private final AttributeSet _attrs;
     private int _cbStyle = R.style.def_radioButtonStyle;
     private int _orientation = VERTICAL;
+    private int position = -1;
 
     private ArrayList<Object> sendArray = new ArrayList<>();
 
@@ -80,6 +81,7 @@ public class DynamicRadioButton extends RadioGroup {
                 rb.setTextAppearance(_context, _cbStyle);
                 rb.setText(items.get(i).toString());
                 rb.setId(i);
+                rb.setChecked(position==i);
                 radioGroup.addView(rb);
             }
 
@@ -106,12 +108,16 @@ public class DynamicRadioButton extends RadioGroup {
         sendArray.add(data);
 
         onCheckedChangeListener.onCheckedChanged(sendArray.get(0));
-
     }
 
     @Override
     protected void removeDetachedView(View child, boolean animate) {
         super.removeDetachedView(child, false);
+    }
+
+    public DynamicRadioButton setSelectedItem(int position) {
+        this.position = position;
+        return this;
     }
 
     public interface OnCheckedChangeListener<T> {
